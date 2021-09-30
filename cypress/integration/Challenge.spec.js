@@ -1,7 +1,9 @@
 describe('Applaudo-challenge', () => {
+  
   beforeEach(() => {
     cy.visit('http://automationpractice.com/index.php')
   })
+  
   it('Add an item to the cart and remove it', () => {
       // We assert that there is no item in the cart
       cy.get('.shopping_cart').find('.products').should('not.exist')
@@ -42,4 +44,5 @@ describe('Applaudo-challenge', () => {
       cy.get('#block_contact_infos').find('.icon-phone').parents('li').should('contain', '(347) 466-7432')
       cy.get('.icon-envelope-alt').parents('li').should('contain', 'support@seleniumframework.com')
   })
+  
 })
