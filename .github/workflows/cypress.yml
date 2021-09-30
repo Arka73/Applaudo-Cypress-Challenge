@@ -9,9 +9,9 @@ on:
 
 jobs:
   cypress-test:
-    name: Run on Chrome 69
+    name: Run on Chrome 89
     runs-on: ubuntu-latest
-    container: cypress/browsers:chrome69
+    container: cypress/browsers:node14.17.0-chrome88-ff89
     steps:
       - name: Checkout
         uses: actions/checkout@v2
