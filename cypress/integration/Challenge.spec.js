@@ -15,6 +15,7 @@ describe('Applaudo-challenge', () => {
       // We assert that there are products in the cart
       cy.get('.shopping_cart').find('.products').should('exist')
       cy.get('.ajax_cart_block_remove_link').click()
+      cy.wait(4000)
       // By checking that there is no item, again, we can be sure that we succesfully removed it
       cy.get('.shopping_cart').find('.products').should('not.exist')
   })
