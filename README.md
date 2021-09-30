@@ -1,0 +1,1 @@
+# Applaudo-Cypress-Challenge
